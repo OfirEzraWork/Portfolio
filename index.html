@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ofir's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item nav-item--welcome">
+          <a href="#" class="nav-item-link">Welcome</a>
+        </li>
+        <li class="nav-item nav-item--projects">
+          <a href="#projects" class="nav-item-link">Projects</a>
+        </li>
+        <li class="nav-item nav-item--about">
+          <a href="#about" class="nav-item-link">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Hero -->
+      <section class="section-hero container">
+        <div class="hero-text-box">
+          <header>
+            <h1 class="hero-text-header h1">Welcome</h1>
+          </header>
+          <p class="hero-text-paragraph">
+            My name is Ofir Ezra.<br />
+            And i am a front end web developer.
+          </p>
+          <div class="colored-line"></div>
+        </div>
+
+        <figure class="hero-figure">
+          <img
+            class="hero-img"
+            src="/img/undraw_developer_activity_re_39tg.svg"
+          />
+        </figure>
+      </section>
+      <!-- Projects -->
+      <section class="section-projects" id="projects">
+        <header class="my-projects-header">
+          <h2 class="h2">My Projects</h2>
+        </header>
+        <div class="container margin-bottom--large center">
+          <div class="projects-grid">
+            <button
+              id="prj-btn-left"
+              class="icon-button"
+              onclick="clickLeftHandler('prj')"
+            >
+              <ion-icon
+                name="arrow-back-circle-outline"
+                class="arrow-left"
+              ></ion-icon>
+            </button>
+            <ul class="projects-list projects-list--prj"></ul>
+            <button
+              id="prj-btn-right"
+              class="icon-button"
+              onclick="clickRightHandler('prj')"
+            >
+              <ion-icon
+                name="arrow-forward-circle-outline"
+                class="arrow-right"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <header class="fm-projects-header">
+          <h2 class="h3">Frontend Mentor Challenges</h2>
+        </header>
+        <div class="container center column">
+          <div class="projects-grid">
+            <button
+              id="fm-btn-left"
+              class="icon-button"
+              onclick="clickLeftHandler('fm')"
+            >
+              <ion-icon
+                name="arrow-back-circle-outline"
+                class="arrow-left"
+              ></ion-icon>
+            </button>
+            <ul class="projects-list projects-list--fm"></ul>
+            <button
+              id="fm-btn-right"
+              class="icon-button"
+              onclick="clickRightHandler('fm')"
+            >
+              <ion-icon
+                name="arrow-forward-circle-outline"
+                class="arrow-right"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- About Me -->
+      <section class="section-about" id="about">
+        <div class="container container--small">
+          <div class="center about-container">
+            <div class="about-text-container about--flex column">
+              <header>
+                <h2 class="h2">About Me</h2>
+              </header>
+              <p class="about-text">
+                Passionate junior front-end developer with a desire to learn and
+                grow in a collaborative team environment.<br />Skilled in HTML,
+                CSS, JavaScript and VueJS. Eager to master these technologies
+                and learn new ones.
+              </p>
+              <ul class="about-tech-list center">
+                <li>
+                  <ion-icon class="tech-icon" name="logo-html5"></ion-icon>
+                </li>
+                <li>
+                  <ion-icon class="tech-icon" name="logo-css3"></ion-icon>
+                </li>
+                <li>
+                  <ion-icon class="tech-icon" name="logo-javascript"></ion-icon>
+                </li>
+                <li>
+                  <ion-icon class="tech-icon" name="logo-vue"></ion-icon>
+                </li>
+              </ul>
+            </div>
+            <div class="about-contact-container about--flex column">
+              <header>
+                <h3 class="h3">Contact Me</h3>
+              </header>
+              <ul class="about-contact-list center">
+                <li>
+                  <a
+                    class="center"
+                    href="https://www.linkedin.com/in/ofir-ezra-47655619b/"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin"> </ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="center"
+                    href="mailto:ofirezrawork@gmail.com"
+                    target="_blank"
+                  >
+                    <ion-icon name="mail"> </ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <script src="scripts/links.js"></script>
+    <script src="scripts/hero-animation.js"></script>
+    <script src="scripts/projects-population.js"></script>
+    <script src="scripts/projects-slider-animations.js"></script>
+    <script src="scripts/observers.js"></script>
+  </body>
+</html>
