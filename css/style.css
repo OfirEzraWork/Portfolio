@@ -215,6 +215,7 @@ a:active {
 .section-projects {
   background-color: var(--background-darker);
   padding: 9.6rem 0;
+  overflow: hidden;
 }
 .fm-projects-header {
   padding: 0 7.2rem;
